@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue_template</title>
+</head>
+<body>
+
+<h2>插值</h2>
+
+<h3>文本</h3>
+<div id="app-1">
+    {{message}}
+</div>
+
+<h3>html</h3>
+<div id="app-2">
+    <p>{{html}}</p>
+    <p v-html="html"></p>
+</div>
+
+<h3>属性</h3>
+<div id="app-3">
+    <button v-bind:disabled="disabledAttrValue">button</button>
+</div>
+
+<h3>使用 js 表达式</h3>
+<div id="app-4">
+    {{message + 1}}
+</div>
+
+<hr/>
+
+<h2>Directives</h2>
+
+<h3>参数</h3>
+<div id="app-5">
+    <a v-bind:href="url" target="_blank">点击我新打开链接</a>
+</div>
+
+<div id="app-6">
+    <button v-on:click="btnClick" value="1">click me</button>
+</div>
+
+<h3>动态参数</h3>
+<div id="app-7">
+    <p v-bind:[title]="title">动态参数</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="./index.js"></script>
+</body>
+</html>
