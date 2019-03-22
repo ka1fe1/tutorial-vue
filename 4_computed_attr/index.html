@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue-Computed Attributes</title>
+</head>
+<body>
+
+<h2>计算属性(computed attributes)</h2>
+
+<h3>基础例子</h3>
+<div id="app-1">
+    <p>message: {{message}}</p>
+    <p>computed message: {{computedMessage}}</p>
+</div>
+
+<h3>计算属性 vs 方法</h3>
+<div id="app-2">
+    <p>message: {{message}}</p>
+    <p>get message: {{getMessage()}}</p>
+</div>
+
+<h3>计算属性 vs 侦听属性</h3>
+<div id="app-3">
+    <p>message: {{message}}</p>
+    <p>watch message: {{watchMessage}}</p>
+</div>
+
+<h3>计算属性的 setter</h3>
+<div id="app-4">
+    <p>first name: {{firstName}}</p>
+    <p>last name: {{lastName}}</p>
+    <p>full name: {{fullName}}</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="./index.js"></script>
+</body>
+</html>
