@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue-Class and Style binding</title>
+</head>
+<hr>
+
+<h2>绑定 class</h2>
+
+<h3>对象语法</h3>
+<div id="app-1">
+    <p v-bind:class="classObject">this is text</p>
+</div>
+
+<h3>数组语法</h3>
+<div id="app-2">
+    <p v-bind:class="[activeClass, errorClass]">this is text</p>
+</div>
+
+<h3>用在组件上</h3>
+<div id="app-3">
+    <my-component v-bind:class="classObject"></my-component>
+</div>
+
+</hr>
+
+<h2>绑定内敛样式</h2>
+
+<h3>对象语法</h3>
+<div id="app-4">
+    <p v-bind:style="styleObject">绑定内敛样式-对象语法</p>
+</div>
+
+<h3>数组语法</h3>
+<div id="app-5">
+    <p v-bind:style="[styleObj1, styleObj2]">绑定内敛样式-数组语法</p>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="./index.js"></script>
+</body>
+</html>
