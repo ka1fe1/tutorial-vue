@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue-条件渲染</title>
+</head>
+<body>
+
+<h2>v-if</h2>
+
+<h3>v-else</h3>
+
+<div id="app-1">
+    <div v-if="isActive">
+        <p>在 template 上使用 v-if</p>
+        <p>This is text</p>
+    </div>
+    <div v-else>
+        <p>noting to do</p>
+    </div>
+</div>
+
+<hr/>
+
+<h3>v-else-if</h3>
+
+<div id="app-2">
+    <div v-if="num == 2">
+        <p>num is equal 2</p>
+    </div>
+    <div v-else-if="num == 1">
+        <p>num is equal 1</p>
+    </div>
+    <div v-else>
+        <p>unknown num, num is {{num}}</p>
+    </div>
+</div>
+
+<h2>v-show</h2>
+
+<div id="app-3">
+    <p v-show="ok">see it or not</p>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="./index.js"></script>
+</body>
+</html>
