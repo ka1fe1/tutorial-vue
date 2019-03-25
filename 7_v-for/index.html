@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue-v_for</title>
+</head>
+<body>
+
+<h2>遍历数组</h2>
+
+<ul id="app-1">
+    <li v-for="(item, index) in items" :key="item.id">{{index}} - {{item.value}}</li>
+</ul>
+
+<h3>遍历对象</h3>
+
+<ul id="app-2">
+    <li v-for="(fieldValue, fieldName, index) in obj" :key="fieldName">
+        {{index}}-{{fieldName}}-{{fieldValue}}
+    </li>
+</ul>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="./index.js"></script>
+</body>
+</html>
