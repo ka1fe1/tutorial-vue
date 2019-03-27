@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue_router</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>hello vue app</h1>
+    <p>
+        <router-link to="/foo">go to foo</router-link>
+        <router-link to="/bar">go to bar</router-link>
+        <router-link to="/user/:id">动态路由</router-link>
+        <router-link to="/user2/:id">嵌套路由</router-link>
+        <router-link :to="{name: 'userInfo', params: {id: 123}}">命名路由</router-link>
+    </p>
+    <router-view></router-view>
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
